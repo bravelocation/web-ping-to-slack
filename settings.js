@@ -1,6 +1,5 @@
 var settings = {
     urls: [ 
-        "https://docs.mickledore.co.uk",
         "https://weantheweans.com",
         "https://yeltz.co.uk", 
         "https://josiemccoy.co.uk", 
