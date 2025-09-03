@@ -10,7 +10,15 @@ var webhook = new IncomingWebhook(url);
 // Function which tries hitting the given url
 WebPingToSlackService.checkWebsite = function (url, callback) {
     request(
-        {uri: url, method: "GET", timeout: 30000, followRedirect: false}, 
+        {
+            uri: url,
+            method: "GET",
+            timeout: 30000,
+            followRedirect: false,
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+            }
+        },
         function(error, response) {
             var success = false;
             var errorCode = 999;
