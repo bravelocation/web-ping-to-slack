@@ -1,7 +1,7 @@
 var settings = {
     urls: [ 
         "https://weantheweans.com",
-        "https://yeltz.co.uk", 
+        // "https://yeltz.co.uk", 
         "https://josiemccoy.co.uk", 
         "https://bravelocation.com", 
         "https://yeltzland.net", 
